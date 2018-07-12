@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+		<!--Setting title, linking styles and fonts-->
+		<title>Organic Food Delivery</title>
+		<link href="../styles/styles.css" rel="stylesheet"/>
+		<link href="../styles/mobile_styles.css" rel="stylesheet" media="screen"/>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+		<link rel="shortcut icon" href="../images/image.png"/>
+		<script src="../java/script.js" defer></script>
+	<head>
+	<!--Company logo-->
+	<header><a href="../html/index.html" alt="Home Page"><img src="../images/image.png" alt="Company Logo" id="companyLogo"/></a></header>
+	<body onload="startTime()">
+		<!--Navigation bar-->
+		<div class="nav">
+			<nav class="horizontal"> <a id="navicon" href="#"><img src="../images/navicon.png" alt="" id="naviconimg"/></a>
+				<ul>
+					<li><a href="../html/index.html" alt="Home page">Home</li></a>
+					<li><a href="../html/index2.html" alt"Shop Online">Shop Online</li></a>
+					<li><a href="../html/index3.html" alt="Online Recipes">Recipes</li></a>
+					<li><a href="../html/index4.html" alt="About Us">About Us</li></a>
+				</ul>
+			</nav></br></br>
+		</div>
+		<!--Empty div that javascript will embed a clock-->
+		<div id="clock"></div>
+		<!--Order Form with grocery items that can be selected-->
+		<section>
+			<form id="orderForm" name="orderForm" method="get" action="index.html">
+			</br>
+			<label for="apple">Apples</label></br>
+			<img src="../images/apple.png" id="shopImages" width="145" height="145"/></br>
+				<select name="apple" id="apple">
+					<option value=0 selected>0</option>
+					<option value=5>1 Pound($5.00)</option>
+					<option value=10>2 Pounds($10.00)</option>
+					<option value=13>3 Pounds($13.00)</option>
+				</select></br></br>
+			<label for="banana">Bananas</label></br>
+			<img src="../images/banana.png" id="shopImages" width="145" height="145"/></br>
+				<select name="banana" id="banana">
+					<option value=0 selected>0</option>
+					<option value=5>1 Pound($5.00)</option>
+					<option value=10>2 Pounds($10.00)</option>
+					<option value=13>3 Pounds($13.00)</option>
+				</select></br></br>
+			<label for="cucumber">Cucumbers</label></br>
+			<img src="../images/cucumber.png" id="shopImages" width="145" height="145"/></br>
+				<select name="cucumber" id="cucumber">
+					<option value=0 selected>0</option>
+					<option value=5>1 Pound($5.00)</option>
+					<option value=10>2 Pounds($10.00)</option>
+					<option value=13>3 Pounds($13.00)</option>
+				</select></br></br>
+			<label for="strawberry">Strawberries</label></br>
+			<img src="../images/strawberry.png" id="shopImages" width="145" height="145"/></br>
+				<select name="strawberry">
+					<option value=0 selected>0</option>
+					<option value=5>1 Pound($5.00)</option>
+					<option value=10>2 Pounds($10.00)</option>
+					<option value=13>3 Pounds($13.00)</option>
+				</select></br></br>
+			 <!--Delivery cost is a flat rate and will be added behind--> 
+			  <h2>Delivery Cost: flat rate ($2.00)</h2></br></br>
+			<!--Empty input that the addition of all grocery will be displayed-->
+			<h2>TOTAL</h2>
+                 <input type="text" name="totalCost" id="totalCost" size="10" readonly /></br></br>
+			</form>
+			<!--Button that will run calcTotal function when clicked-->
+			<button id="button2">Calculate Total</button>
+		</section>
+	</body>
+	<footer>
+		<div id="contactUs">
+		<!--Company contact information-->
+		<h1>Contact Us:</h1>
+		<p id="phone">Phone Number</p><a href="tel:+15165515185">(516) 551-5185</a> 
+		<p id="email">E-mail</p><a href="mailto:organic@yahoo.com"> Organic@yahoo.com </a>
+		</div>
+	</footer>
+</html>
